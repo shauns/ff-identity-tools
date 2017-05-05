@@ -1,0 +1,19 @@
+{
+  "main": "lib/ff-identity-tools.js",
+  "scripts": {
+    "prepublish": "rm -rf lib && babel src --out-dir lib --ignore __tests__ && flow-copy-source -i **/__tests__/**/*.js -v src lib",
+    "flow_check": "flow check"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.4.0",
+    "flow-bin": "^0.45.0",
+    "flow-copy-source": "^1.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "redux-form": "^6.6.3",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

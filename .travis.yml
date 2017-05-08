@@ -4,7 +4,7 @@ cache:
   directories:
   - node_modules
 node_js:
-- 4
+- 7
 script: npm run flow_check
 deploy:
   skip_cleanup: true

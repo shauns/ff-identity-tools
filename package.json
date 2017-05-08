@@ -1,6 +1,6 @@
 {
   "name": "ff-identity-tools",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/shauns/ff-identity-tools.git",
   "author": "shauns",
   "main": "lib/ff-identity-tools.js",
@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "redux-form": "^6.6.3",
     "whatwg-fetch": "^2.0.3"
+  },
+  "peerDependencies": {
+    "redux-form": "^6.6.3"
   }
 }

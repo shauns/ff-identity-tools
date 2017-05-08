@@ -1,6 +1,6 @@
 {
   "name": "ff-identity-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "https://github.com/shauns/ff-identity-tools.git",
   "author": "shauns",
   "main": "lib/ff-identity-tools.js",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.4.0",
     "flow-bin": "^0.45.0",
     "flow-copy-source": "^1.1.0"

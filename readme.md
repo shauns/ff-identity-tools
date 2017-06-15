@@ -6,3 +6,4 @@ For JS consumption in React Native and on Web.
 
 * `performLogin(identityApi, usernameOrEmail, password)`
 * `performSignUp(identityApi, username, email, password, [communityId])`
+* `startForgotPassword(identityApi, email)`

@@ -43,3 +43,9 @@ export const FINISH_AUTH_CALLBACK_FAILED =
 
 export const FINISH_AUTH_CALLBACK_NO_LANDING_PAGE =
   "Log in failed. Landing page error. Please return to the site you were trying to access and try again.";
+
+export const FORGOT_PASSWORD_FAILED_SERVICE_UNAVAILABLE =
+  "Resetting password failed. Server is not available. We're on the case!";
+
+export const FORGOT_PASSWORD_FAILED_BAD_INPUT =
+  "Resetting password failed. Is the email address correct?";

@@ -7,11 +7,6 @@ export const SIGN_UP_FAILED_BAD_INPUT_DATA =
 export const SIGN_UP_FAILED_USER_ALREADY_EXISTS_DIFFERENT_DETAILS =
   "Sign up failed. User already exists. Try log in instead?";
 
-export const SIGN_UP_FAILED_USERNAME_EXISTS_FIELD = "Username already exists";
-
-export const SIGN_UP_FAILED_USERNAME_EXISTS =
-  "Sign up failed. Username already exists. Try log in instead?";
-
 export const SIGN_UP_FAILED_PREFER_SOCIAL =
   "Sign up failed. User already exists. Try Facebook log in instead?";
 

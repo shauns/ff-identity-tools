@@ -10,10 +10,9 @@ import signUp from "./signUp";
  */
 export default (async function performSignUp(
   identityApi: string,
-  username: string,
   email: string,
   password: string,
   communityId: ?string
 ): Promise<CredentialAuth> {
-  return signUp(identityApi, username, email, password, communityId);
+  return signUp(identityApi, email, password, communityId);
 });

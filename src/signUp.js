@@ -6,7 +6,6 @@ import type { PermanentCredentialAuth, CredentialAuth } from "./types";
 
 async function signUp(
   identityApi: string,
-  username: string,
   email: string,
   password: string,
   communityId: ?string,
@@ -17,7 +16,6 @@ async function signUp(
 
   let url = `${identityApi}/sign-up-with-credentials`;
   let body: any = {
-    username,
     email,
     password,
     metadata,
@@ -49,17 +47,9 @@ async function signUp(
   if (!res.ok) {
     if (res.status === 403 || res.status === 401) {
       // The user signed-up, but already exists *with different details*
-      const { detail } = await res.json();
-      if (detail === "Username exists") {
-        throw new SubmissionError({
-          username: messages.SIGN_UP_FAILED_USERNAME_EXISTS_FIELD,
-          _error: messages.SIGN_UP_FAILED_USERNAME_EXISTS,
-        });
-      } else {
-        throw new SubmissionError({
-          _error: messages.SIGN_UP_FAILED_USER_ALREADY_EXISTS_DIFFERENT_DETAILS,
-        });
-      }
+      throw new SubmissionError({
+        _error: messages.SIGN_UP_FAILED_USER_ALREADY_EXISTS_DIFFERENT_DETAILS,
+      });
     }
     if (res.status === 409) {
       // The user should prefer social media

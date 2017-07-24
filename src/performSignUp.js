@@ -1,5 +1,5 @@
 // @flow
-import type { CredentialAuth } from "./types";
+import type { CredentialAuth, Messages } from "./types";
 import signUp from "./signUp";
 
 /**
@@ -12,7 +12,8 @@ export default (async function performSignUp(
   identityApi: string,
   email: string,
   password: string,
-  communityId: ?string
+  communityId: ?string,
+  messages: Messages
 ): Promise<CredentialAuth> {
-  return signUp(identityApi, email, password, communityId);
+  return signUp(identityApi, email, password, communityId, null, messages);
 });

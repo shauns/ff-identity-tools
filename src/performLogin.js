@@ -1,5 +1,5 @@
 // @flow
-import type { CredentialAuth } from "./types";
+import type { CredentialAuth, Messages } from "./types";
 import login from "./login";
 
 /**
@@ -11,7 +11,8 @@ import login from "./login";
 export default (async function performLogin(
   identityApi: string,
   usernameOrEmail: string,
-  password: string
+  password: string,
+  messages: Messages
 ): Promise<CredentialAuth> {
-  return login(identityApi, usernameOrEmail, password);
+  return login(identityApi, usernameOrEmail, password, null, messages);
 });

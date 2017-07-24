@@ -1,14 +1,18 @@
 // @flow
 import "whatwg-fetch";
 import { SubmissionError } from "redux-form";
-import * as messages from "./messages";
-import type { PermanentCredentialAuth, CredentialAuth } from "./types";
+import type {
+  PermanentCredentialAuth,
+  CredentialAuth,
+  Messages,
+} from "./types";
 
 async function login(
   identityApi: string,
   usernameOrEmail: string,
   password: string,
-  deviceId: ?string
+  deviceId: ?string,
+  messages: Messages
 ) {
   let url = `${identityApi}/login-with-credentials`;
   let body = {

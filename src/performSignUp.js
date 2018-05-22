@@ -13,7 +13,16 @@ export default (async function performSignUp(
   email: string,
   password: string,
   communityId: ?string,
-  messages: Messages
+  messages: Messages,
+  passedAgeConfirmation: ?boolean
 ): Promise<CredentialAuth> {
-  return signUp(identityApi, email, password, communityId, null, messages);
+  return signUp(
+    identityApi,
+    email,
+    password,
+    communityId,
+    null,
+    messages,
+    passedAgeConfirmation
+  );
 });

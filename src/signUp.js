@@ -13,7 +13,8 @@ async function signUp(
   password: string,
   communityId: ?string,
   deviceId: ?string,
-  messages: Messages
+  messages: Messages,
+  passedAgeConfirmation: ?boolean
 ) {
   // TODO build metadata
   const metadata = {};
@@ -23,6 +24,7 @@ async function signUp(
     email,
     password,
     metadata,
+    passedAgeConfirmation,
   };
   if (communityId) {
     body["communityId"] = communityId;

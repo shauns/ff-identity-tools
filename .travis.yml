@@ -2,16 +2,16 @@ language: node_js
 sudo: false
 cache:
   directories:
-  - node_modules
+    - node_modules
 node_js:
-- 7
+  - 7
 script: npm run flow_check
 deploy:
   skip_cleanup: true
   provider: npm
   email: shaun.stanworth@googlemail.com
   api_key:
-    secure: Q12HfJTCaL7Y5uDNH8VUiHcLwDcYzzn+azIfnd4+xXSAeR7mceYS6w4UnkMaRU3E1FlIU1sD8T7CQ6ZekMobrnvNIBt66ZwNyirNsaWRb/K77MT5Xzdhl9uSkMTAKRAE6dBVneIS4yJcIUB+nAt7MXpw78cl6Elw+D8S7E2SIf9WIV3wNPxdwpemDfqyAAuzjIzeTXjCIEcxNB2nonB2/X/BOvVWfuwqIrjg/qUUZR4uw6S2ROD+OrakxGjtpj0XgaaOamwaYZudJI5RmYdx2EuwW10KI5l7olElJENW14G1k0d2tAqThz0Zp9o/wlDBQq3l0UWh8Z2Z9rypo3qRI8HF4yzIC7lvCUeqr/Pi+nA4c0tJxhTpckCb8nj3QUfGPLyNBxC/KfBViNP4e8BTmTtFCJdCR2U5+KWo+FxzyL98Lvl5VXiUDH8G4UVCzaxYhDFcQXd2e32oNPnkx0jtprGrPk9aOnWJORlz2TNiuWgbyufkYiYr8KxwwrLU3zBSPFEF0yEZI+/bVxdvF+6bC3D5xkBFHliGMzcLCDKiYsy6l1V44njI9EPMZuw/cspWV4PYGYOdbYcTk13+3kc+OUxwQJ9G30s15w7oQxB9mucS/qHZ2pgn64aPZTyPMG7bhNM1Nvatf+qfi5bjtDYNL7PXvycWzDPWILYZSRp0UVA=
+    secure: IzcLZY+jXOkE8ijRsJlFebM9Yp2/00j2oj3hZK7tBX5XMSdbje6kQBWDaSzKG9urJydiNz+cyOtiwVTvJuOT/rVj0RI7+Ys7/H7V56x1tLNtpZaGVXCUr11/bFoRmMREXDNTBqvHQmmWpHPxacrHRcfM5VLrVMhwTTywN/mQ+RDYFdgugsF2/V7VP93vA6OVlKcJXBFffnHWu+aoJ/gQ9d6sqfKKgVyOZAMo/M5MAPubxfuf7et4jwwot421zLYEfDjHR0yNLhFK/CNDxQsvXvifaMnK+s88Vih7RRJa1onBOZn76TAGuhEY9seYqBsGqpmHyx0MANKqY+BTL3COi8bUjT6grE+mn/ItlmXJacMxrfG3kGAuOvH1TQwqqKy5/8zozm5WPwggOWMpjpK2fEnbpnykFIAT8WPTh6vAAX5vhPkeqll2r6YA8sgayZXUlJOkEgD3HTl2Ez758BtG1J/9yCjUewMhuJ2ulcjATZEhHgBWZpo2hf5ystIElqgZeli+eQf6jpz81qwevp62ApVbZ4790mHVg3r0dT7TSVOGjEfC+G59ooc2V61lBrGsElj8R3XwA1u2lx9fgtQ/ZeNSMFoPSaQFRvdNbqRh/ACEZP2Q7LGSIfGq2NfRYm/RXnyhdZLMmvGvUXa5hNE0ZpLJ1ZEiZyzn9BYTvrjYnG8=
   on:
     repo: shauns/ff-identity-tools
     branch: master

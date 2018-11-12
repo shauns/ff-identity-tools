@@ -1,6 +1,7 @@
 // @flow
 import "whatwg-fetch";
-import { SubmissionError, Messages } from "redux-form";
+import { SubmissionError } from "redux-form";
+import type { Messages } from "./types";
 
 export default async function startForgotPassword(
   identityApi: string,

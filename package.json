@@ -1,12 +1,11 @@
 {
   "name": "ff-identity-tools",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "repository": "https://github.com/shauns/ff-identity-tools.git",
   "author": "shauns",
   "main": "lib/ff-identity-tools.js",
   "scripts": {
-    "prepublish":
-      "rm -rf lib && babel src --out-dir lib --ignore __tests__ && flow-copy-source -i **/__tests__/**/*.js -v src lib",
+    "prepublish": "rm -rf lib && babel src --out-dir lib --ignore __tests__ && flow-copy-source -i **/__tests__/**/*.js -v src lib",
     "flow_check": "flow check"
   },
   "devDependencies": {

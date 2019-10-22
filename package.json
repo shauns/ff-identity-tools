@@ -1,6 +1,6 @@
 {
   "name": "ff-identity-tools",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "repository": "https://github.com/shauns/ff-identity-tools.git",
   "author": "shauns",
   "main": "lib/ff-identity-tools.js",

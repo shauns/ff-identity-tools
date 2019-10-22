@@ -1,10 +1,11 @@
 // @flow
 
-export type CredentialAuth = { token: string, user: any };
+export type CredentialAuth = { token: string, user: any, exchangeCode: string };
 
 export type PermanentCredentialAuth = {
   token: string,
   user: any,
+  exchangeCode: string,
   refreshToken: { id: string, deviceId: string },
 };
 
